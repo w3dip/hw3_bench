@@ -109,3 +109,10 @@ func SlowSearch(out io.Writer) {
 	fmt.Fprintln(out, "found users:\n"+foundUsers)
 	fmt.Fprintln(out, "Total unique browsers", len(seenBrowsers))
 }
+
+//func main() {
+//	slowOut := new(bytes.Buffer)
+//	SlowSearch(slowOut)
+//	slowResult := slowOut.String()
+//	fmt.Println(slowResult)
+//}
